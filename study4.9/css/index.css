@@ -82,6 +82,9 @@ input:focus::placeholder{
 .con-box{
     display: none;
 }
+.hidden{
+    display:none;
+}
 @media all and (min-width: 600px){
     *{
         margin: 0;
