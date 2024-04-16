@@ -5,7 +5,7 @@ if(window.innerWidth > 500) {
     var register_box = document.getElementsByClassName('register-box')[0];
     var login_box = document.getElementsByClassName('login-box')[0];
     toRegister.addEventListener('click',()=>{
-        form_box.style.transform='translateX(100.5%)';
+        form_box.setAttribute('style','transform:translateX(100.5%);transition: 0.5s ease-in-out;');
         login_box.classList.add('hidden');
         register_box.classList.remove('hidden');
         document.getElementById('logUN').value = "";
@@ -14,7 +14,7 @@ if(window.innerWidth > 500) {
         document.getElementById('regPW').value = "";
     })
     toLogin.addEventListener('click',()=>{
-        form_box.style.transform='translateX(0%)';
+        form_box.setAttribute('style','transform:translateX(0%);transition: 0.5s ease-in-out;');
         register_box.classList.add('hidden');
         login_box.classList.remove('hidden');
         document.getElementById('logUN').value = "";
